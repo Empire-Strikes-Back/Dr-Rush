@@ -17,4 +17,13 @@ main(){
     -M -m starnet.main
 }
 
+uberjar(){
+  clj \
+    -X:uberjar genie.core/process \
+    :uberjar-name out/starnet.standalone.jar \
+    :main-ns starnet.main
+  mkdir -p out/jpackage-input
+  mv out/starnet.standalone.jar out/jpackage-input/
+}
+
 "$@"

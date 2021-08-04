@@ -26,7 +26,7 @@
     (reset! stateA {})
     (add-watch stateA :watch-fn (fn [k stateA old-state new-state] new-state))
 
-    (let [jframe (JFrame. "starnet")]
+    (let [jframe (JFrame. "i am starnet program")]
       (doto jframe
         (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
         (.setSize 1600 1200)

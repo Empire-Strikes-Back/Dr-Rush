@@ -1,4 +1,4 @@
-(ns starnet.main
+#_(ns starnet.main
   (:gen-class)
   (:require
    [clojure.core.async :as a :refer [chan go go-loop <! >! <!! >!!  take! put! offer! poll! alt! alts! close! onto-chan!

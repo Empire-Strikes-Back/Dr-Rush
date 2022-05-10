@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+
+  Robert:
+    image: dr-rush/robert
+    build:
+      context: ./Dr-Rush/Robert
+    ports:
+      - 3333:8080
+
+  Carlyle:
+    image: dr-rush/carlyle
+    build:
+      context: ./Dr-Rush/Carlyle
+    ports:
+      - 3334:80

@@ -1,4 +1,4 @@
-(ns starnet.game1
+#_(ns starnet.game1
   (:require
    [clojure.repl :refer [doc]]
    [clojure.spec.alpha :as s]
